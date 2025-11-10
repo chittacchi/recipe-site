@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*サイト共通スタイル  */
+body a {
+    font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Meiryo', 'sans-serif';
+    color: #2b2a27;
+    line-height: 1.6;
+}
+/* 画面サイズが835px以上の時のスタイル */
+.mainvisual img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.site-title {
+    text-align: center;
+}
+.site-title h1 {
+    font-size: 2rem;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.site-title p {
+    font-size: 1rem;
+    margin-bottom: 80px;
+}
+.recipe-list {
+    display: flex;
+    height: 500px;
+}
+.recipe-list li{
+    width: calc(100%/3);
+}
+.recipe-list img {
+    width: 100%;  
+    height: 500px;
+    object-fit: cover;
+}
+.btn {
+    text-align: center;
+    height: auto;
+    padding-top: 78px;
+}
+.btn-a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #2b2a27;
+    font-size: 14px;
+    width: 230px;
+    padding: 18px 60px;
+}
+.footer {
+    text-align: center;
+    margin-top: 118px;
+}
+.sns {
+    display: inline-flex;
+    list-style: none;
+    color: #2b2a27;
+}
+.sns li {
+    margin: 0 10px; 
+}
+.footer a {
+    font-size: 12px;
+}
+.footer p {
+    margin: 20px 0;
+    font-size: 12px;
+}
+/* 画面サイズが834px以下の時のスタイル */
+@media screen and (max-width: 834px) {
+    .recipe-list {
+        flex-direction: column;
+        height: auto;
+    }
+    .recipe-list img {
+        height: 500px;
+    }
+    .recipe-list li {
+        width: 100%;
+    }
+}
+/* 画面サイズが232px以下の時のスタイル */
+@media screen and (max-width: 232px) {
+    .btn-a {
+        display: block;
+        width: auto;
+    }
+}  
